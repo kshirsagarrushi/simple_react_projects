@@ -1,7 +1,11 @@
 import './App.css';
+import Qrcode from './components/qr-code';
 // import Accordion from './components/accordion';
 // import ImageSlider from './components/image-slider';
-import LoadMoreData from './components/load-more-button';
+// import LoadMoreData from './components/load-more-button';
+// import { Practice } from './components/load-more-button/practice';
+import TreeView from './components/tree-view';
+import menus from './components/tree-view/data';
 // import RandomColor from './components/random-color';
 // import StarRating from './components/star-rating';
 
@@ -20,7 +24,11 @@ function App() {
       limit={'10'}
      /> */}
      {/*Load more button */}
-     <LoadMoreData/>
+     {/* <LoadMoreData/> */}
+     {/* <Practice/> */}
+
+     {/* <TreeView menus={menus}/> */}
+     <Qrcode/>
     </div>
   );
 }
