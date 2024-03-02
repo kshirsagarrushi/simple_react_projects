@@ -9,17 +9,14 @@ export default function Qrcode(){
         setQrcode(input);
         setInput('');
     }
-    const handleInput=(e)=>{
-        setInput(e.target.value);
-    }
-
+    
     return(
         <div >
             <h1>QR Code Generator</h1>
             <input 
             type="text" 
             value={input}
-            onChange={(e)=>handleInput(e)} 
+            onChange={(e)=>setInput(e.target.value)} 
             placeholder="Enter you value here"/>
 
             <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',margin:'20px'}}>
